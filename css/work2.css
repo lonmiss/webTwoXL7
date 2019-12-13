@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -51,12 +53,12 @@ li{
     position: absolute;
     opacity: 0;
 }
-#nav1{
+#nav{
     position: relative;
     left:460px;
     top: 340px;
 }
-.nav1>li{
+.nav>li{
     float: left;
     width:20px;
     height:20px;
@@ -66,7 +68,7 @@ li{
     border-radius:50%;
     text-align: center;
 }
-.nav1 .active{
+.nav .active{
     background: red;
     color: white;
 }
@@ -79,7 +81,7 @@ li{
 #topPart>div{
     /*border: #829606 1px solid;*/
     position: relative;
-    width: 900px;
+    width: 840px;
     left:260px;
     float: left;
     overflow: hidden;

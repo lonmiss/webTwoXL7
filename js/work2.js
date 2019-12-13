@@ -1,18 +1,18 @@
 
 var box=document.getElementById("box");
-var oNavlist=document.getElementById("nav1").children;
+//var oNavlist=document.getElementById(“nav').children;
 var slider=document.getElementById("slider");
 var left=document.getElementById("left");
 var right=document.getElementById("right");
-
+var oNavlist=document.getElementById("nav").children;
 var index=1;
-var isMoving=false;
 var timer;
+var report=document.getElementById("report");
 var cnt=360;
 setInterval(function () {
     report.style.left=cnt+"px";
     cnt--;
-    if(cnt==-360){
+    if(cnt==-550){
         cnt=720;
     }
 },10);
@@ -24,6 +24,7 @@ function next(){
     animate(slider,{left:-1200*index},function () {
         if(index==6){
             slider.style.left="-1200px";
+            index=1;
         }
     });
 }
@@ -33,6 +34,7 @@ function prev(){
     animate(slider,{left:-1200*index},function () {
         if(index==0){
             slider.style.left="-7200px";
+            index=5;
         }
     });
 }
