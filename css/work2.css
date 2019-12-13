@@ -1,0 +1,96 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+#topPart{
+    background-color: #aaaaaa;
+    height:20px;
+    margin-bottom: 18px;
+}
+#topPartImg{
+    position: relative;
+    left: 260px;
+    float: left;
+}
+.box{
+    width:1200px;
+    height:397px;
+    border:1px solid #31ff32;
+    margin: 100px auto;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 8400px;
+    position: absolute;
+    left: -1200px;
+}
+.slide{
+    width: 1200px;
+    overflow: hidden;
+    float: left;
+}
+.slide>img{
+    height: 397px;
+}
+.box>span{
+    display: block;
+    width:30px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    top:175px;
+    line-height: 50px;
+    background: rgb(255,0,0);
+    font-size: 30px;
+    position: absolute;
+    opacity: 0;
+}
+#nav{
+    position: relative;
+    left:460px;
+    top: 340px;
+}
+.nav>li{
+    float: left;
+    width:20px;
+    height:20px;
+    background: #ccc;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius:50%;
+    text-align: center;
+}
+.nav .active{
+    background: red;
+    color: white;
+}
+#left{
+    left: 30px;
+}
+#right{
+    right: 30px;
+}
+#topPart>div{
+    /*border: #829606 1px solid;*/
+    position: relative;
+    width: 840px;
+    left:260px;
+    float: left;
+    overflow: hidden;
+}
+#topPart>div>p{
+    position: relative;
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    left: 360px;
+    /*left: -360px;*/
+}
