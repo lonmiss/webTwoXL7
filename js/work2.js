@@ -7,6 +7,7 @@ var right=document.getElementById("right");
 var oNavlist=document.getElementById("nav").children;
 var index=1;
 var timer;
+var isMoving=false;
 var report=document.getElementById("report");
 var cnt=360;
 setInterval(function () {
@@ -19,6 +20,10 @@ setInterval(function () {
 
 
 function next(){
+    if(isMoving){
+        return ;
+    }
+    isMoving=true;
     index++;
     navChange();
     animate(slider,{left:-1200*index},function () {
@@ -26,9 +31,14 @@ function next(){
             slider.style.left="-1200px";
             index=1;
         }
+        isMoving=false;
     });
 }
 function prev(){
+    if(isMoving){
+        return ;
+    }
+    isMoving=true;
     index--;
     navChange();
     animate(slider,{left:-1200*index},function () {
@@ -36,6 +46,7 @@ function prev(){
             slider.style.left="-7200px";
             index=5;
         }
+        isMoving=false;
     });
 }
 timer=setInterval(next,3000);
